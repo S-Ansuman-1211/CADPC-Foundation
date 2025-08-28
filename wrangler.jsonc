@@ -12,11 +12,5 @@
     "directory": "dist/client",
     "not_found_handling": "single-page-application"
   },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "01986a3e-8496-755d-9eaa-b1b5d0d2ce88",
-      "database_id": "01986a3e-8496-755d-9eaa-b1b5d0d2ce88"
-    }
-  ]
+
 }
