@@ -1,9 +1,6 @@
 # Node.js dependencies
 node_modules/
 
-# Vite build output
-dist/
-
 # Local environment variables
 .env
 .env.local
@@ -28,10 +25,10 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Wrangler cache and temporary files
+.wrangler/
 .wrangler/deploy/
 
-dist/
-build/
-
-
-.wrangler/
+# Keep dist/ for deployment but ignore specific subdirectories
+dist/01986a3e_8496_755d_9eaa_b1b5d0d2ce88/
+!dist/client/
