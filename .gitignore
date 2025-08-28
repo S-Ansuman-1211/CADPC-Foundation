@@ -29,3 +29,9 @@ pnpm-debug.log*
 Thumbs.db
 
 .wrangler/deploy/
+
+dist/
+build/
+
+
+.wrangler/
