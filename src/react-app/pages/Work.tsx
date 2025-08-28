@@ -168,7 +168,7 @@ export default function Work() {
             </div>
             <div className="relative">
               <img
-                src="/images/IMG-20250810-WA0028.jpg"
+                src="/IMG-20250810-WA0028.jpg"
                 alt="Children in classroom"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
