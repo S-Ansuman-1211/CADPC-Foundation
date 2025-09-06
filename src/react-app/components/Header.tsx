@@ -58,9 +58,7 @@ export default function Header() {
 
           {/* Donate Button */}
           <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/donate"
             className="hidden md:inline-flex items-center px-6 py-3 border-2 border-gray-300 text-sm font-semibold rounded-full text-gray-900 bg-gray-100 hover:bg-gray-200 hover:border-gray-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <HandHeart className="mr-2 h-4 w-4" />
@@ -95,9 +93,7 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/donate"
                 onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-center px-6 py-3 border-2 border-gray-300 text-sm font-semibold rounded-full text-gray-900 bg-gray-100 hover:bg-gray-200 transition-all duration-300 shadow-lg"
               >

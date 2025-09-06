@@ -248,33 +248,140 @@ export default function Volunteer() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20" style={{ background: "linear-gradient(135deg, #4b5563 0%, #6b7280 100%)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Make a Difference?</h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Join our volunteer family and help us create a more inclusive world through chess.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200"
-            >
-              <HandHeart className="mr-2 h-5 w-5" />
-              Apply Now
-            </a>
-            <a
-              href="/contact"
-              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-gray-800 bg-white hover:bg-gray-100 transition-all duration-200 shadow-lg"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Get in Touch
-            </a>
+      {/* How You Can Help Us */}
+      <section
+        className="py-20 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.8)), url('/IMG-20250810-WA0020.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">How You Can Help Us</h2>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              At CADPC Foundation, every move counts – both on the chessboard and in life. Your support can transform
+              the journey of physically challenged chess players, helping them pursue their passion, gain recognition,
+              and build a dignified livelihood through the game they love.
+            </p>
+          </div>
+
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-white mb-8 text-center">💙 Ways You Can Support</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-3 rounded-full w-fit mb-4 shadow-lg">
+                  <HandHeart className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3">1. Donate</h4>
+                <p className="text-gray-200 leading-relaxed">
+                  Your contributions directly go towards training, equipment, travel, and tournament sponsorships for
+                  specially-abled players. All donations are eligible for tax exemption under Section 80G.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-3 rounded-full w-fit mb-4 shadow-lg">
+                  <Award className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3">2. Sponsor a Player or Event</h4>
+                <p className="text-gray-200 leading-relaxed">
+                  You can choose to support an individual player or sponsor a tournament. This not only gives players
+                  financial security but also motivates them to achieve new heights.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-3 rounded-full w-fit mb-4 shadow-lg">
+                  <Users className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3">3. Partner With Us</h4>
+                <p className="text-gray-200 leading-relaxed">
+                  Are you an organization or corporate house? Partner with us for CSR initiatives. Together, we can create
+                  impactful programs that open doors for talent and inclusivity.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-3 rounded-full w-fit mb-4 shadow-lg">
+                  <Clock className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3">4. Volunteer Your Time</h4>
+                <p className="text-gray-200 leading-relaxed">
+                  From mentoring and training to event management and digital support, your skills can make a difference. 
+                  Even a few hours a month can change lives.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-3 rounded-full w-fit mb-4 shadow-lg">
+                  <Megaphone className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-3">5. Spread the Word</h4>
+                <p className="text-gray-200 leading-relaxed">
+                  Help us reach more hearts and minds. Share our story on social media, invite friends to our events, 
+                  and be a voice for inclusion in chess.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <h3 className="text-3xl font-bold text-white mb-8">🌟 Why Your Support Matters</h3>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-8">
+              Behind every move is a story of resilience. By supporting CADPC Foundation, you are:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <p className="text-gray-200 leading-relaxed">
+                  <span className="text-white font-semibold">•</span> Empowering players to compete at state, national, and international levels.
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <p className="text-gray-200 leading-relaxed">
+                  <span className="text-white font-semibold">•</span> Giving them financial independence through prize earnings.
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <p className="text-gray-200 leading-relaxed">
+                  <span className="text-white font-semibold">•</span> Helping create an inclusive community where talent shines above limitations.
+                </p>
+              </div>
+            </div>
+            <p className="text-xl text-white font-semibold mb-8">
+              Together, let's make the chessboard a space where ability is the only thing that matters.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <a
+                href="/donate"
+                className="group inline-flex items-center px-10 py-5 border-2 border-gold-400 text-xl font-bold rounded-full text-gold-400 bg-gray-800/50 backdrop-blur-sm hover:bg-gold-400 hover:text-black transition-all duration-300 shadow-2xl hover:shadow-gold-400/25 transform hover:scale-105"
+              >
+                <HandHeart className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+                Donate Now
+              </a>
+              <a
+                href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center px-10 py-5 border-2 border-white text-xl font-bold rounded-full text-white bg-gray-800/50 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105"
+              >
+                <Users className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+                Volunteer With Us
+              </a>
+              <a
+                href="/contact"
+                className="group inline-flex items-center px-10 py-5 border-2 border-white text-xl font-bold rounded-full text-white bg-gray-800/50 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105"
+              >
+                <Mail className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+                Get in Touch
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
     </div>
   )
 }

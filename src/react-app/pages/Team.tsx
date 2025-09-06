@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Users, Star, Award, Lightbulb } from "lucide-react"
+import { Mail, Linkedin, Users, Star, Award, Lightbulb, HandHeart } from "lucide-react"
 
 // Static team data - no database needed
 const teamMembers = [
@@ -7,30 +7,40 @@ const teamMembers = [
     name: "Yamini Arora",
     role: "President",
     bio: "Founder and President of CADPC Foundation, Yamini leads with heart and purpose. As a mother to a young chess enthusiast, she started CADPC to eliminate barriers faced by specially-abled players, creating a space of equal opportunity.",
-    image_url: "/IMG-20250810-WA0041.jpg",
+    image_url: "/images/main.jpg",
   },
   {
-    id: 2,
-    name: "Surendra Singh Bisht",
-    role: "Treasurer",
-    bio: "Father of Sonu Bisht, a physically challenged chess player, Mr. Bisht brings firsthand understanding to his role. He ensures the foundation's resources are efficiently used to support talented individuals who need financial and emotional backing.",
-    image_url: "/team2.jpg",
-  },
-  {
-    id: 3,
+     id: 2,
     name: "Manoj Gautam",
     role: "Secretary",
     bio: "Inspired by his son Vaibhav—whose love for chess sparked the beginning of CADPC—Mr. Gautam dedicates his time to enabling similar players with physical disabilities to access the same opportunities.",
-    image_url: "/team1.jpg",
+    image_url: "/team2.jpg",
+  },
+  {
+   
+     id: 3,
+    name: "Surendra Singh Bisht",
+    role: "Treasurer",
+    bio: "Father of Sonu Bisht, a physically challenged chess player, Mr. Bisht brings firsthand understanding to his role. He ensures the foundation's resources are efficiently used to support talented individuals who need financial and emotional backing.",
+    image_url: "/team3.jpg",
   },
   {
     id: 4,
     name: "Sushant Tiwari",
     role: "Joint Secretary",
     bio: "With a hands-on approach, Sushant plays a key role in managing logistics, event execution, and community coordination—ensuring smooth experiences for players, families, and volunteers.",
-    image_url: "/team3.jpg",
+    image_url: "/team1.jpg",
   },
 ]
+const youngLeaders = [
+  {
+    id: 1,
+    name: "Ayan",
+    role: "Young Leader – Volunteer Wing",
+    bio: "A passionate young chess enthusiast who inspires peers with strategic thinking and dedication. As part of our Volunteer Wing, Eya brings his friends and community together to build an inclusive future through chess.",
+    image_url: "images/ayaan.jpg",
+  },
+];
 
 export default function Team() {
   return (
@@ -61,32 +71,32 @@ export default function Team() {
 
       {/* Team Members */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-300"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-300 hover:scale-105"
               >
-                <div className="relative">
+                <div className="relative h-96 overflow-hidden">
                   <img
-                    src={member.image_url || "/IMG-20250810-WA0033.jpg"}
+                    src={member.image_url || "/Yamini.jpg"}
                     alt={member.name}
-                    className="w-full h-80 object-contain bg-gray-100 group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center bg-gray-100 transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-800/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-800/80 to-transparent group-hover:from-gray-800/90 transition-all duration-300"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                    <p className="text-gray-200 font-medium">{member.role}</p>
+                    <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
+                    <p className="text-gray-200 font-medium text-lg">{member.role}</p>
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-700 leading-relaxed mb-4">{member.bio}</p>
+                  <p className="text-gray-700 leading-relaxed mb-4 text-lg">{member.bio}</p>
                   <div className="flex space-x-3">
-                    <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
+                    <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100">
                       <Mail className="h-5 w-5" />
                     </button>
-                    <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
+                    <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100">
                       <Linkedin className="h-5 w-5" />
                     </button>
                   </div>
@@ -96,6 +106,54 @@ export default function Team() {
           </div>
         </div>
       </section>
+      {/* Young Generation Section */}
+        <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Young Generation
+          </h2>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            Where passion meets inclusion. Where every player finds a place.
+          </p>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {youngLeaders.map((member) => (
+            <div
+              key={member.id}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-300 hover:scale-105"
+            >
+              <div className="relative h-96 overflow-hidden">
+                <img
+                  src={member.image_url || "/Yamini.jpg"}
+                  alt={member.name}
+                  className="w-full h-full object-cover object-center bg-gray-100 transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-800/80 to-transparent group-hover:from-gray-800/90 transition-all duration-300"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
+                  <p className="text-gray-200 font-medium text-lg">{member.role}</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-700 leading-relaxed mb-4 text-lg">{member.bio}</p>
+                <div className="flex space-x-3">
+                  <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100">
+                    <Mail className="h-5 w-5" />
+                  </button>
+                  <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100">
+                    <Linkedin className="h-5 w-5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
       {/* Team Values */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
@@ -154,6 +212,13 @@ export default function Team() {
             >
               <Users className="mr-2 h-5 w-5" />
               Become a Volunteer
+            </a>
+            <a
+              href="/donate"
+              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-gray-800 bg-white hover:bg-gray-100 transition-all duration-200 shadow-lg"
+            >
+              <HandHeart className="mr-2 h-5 w-5" />
+              Donate Now
             </a>
             <a
               href="/contact"

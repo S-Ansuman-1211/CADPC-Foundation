@@ -1,42 +1,9 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { Crown, Users, Trophy, Globe, CreditCard, GraduationCap, Plane, Package } from "lucide-react"
+import { Crown, Users, Trophy, Globe, HandHeart, Star, BookOpen, MapPin, Gift } from "lucide-react"
 
 export default function Donate() {
-  const [showRedirect, setShowRedirect] = useState(false)
-
-  useEffect(() => {
-    // Show the page for 5 seconds before redirecting
-    const timer = setTimeout(() => {
-      setShowRedirect(true)
-      window.location.href = "https://forms.gle/YOUR_GOOGLE_FORM_ID"
-    }, 5000)
-
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (showRedirect) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 flex items-center justify-center">
-        <div className="max-w-md mx-auto text-center p-8 bg-white rounded-2xl shadow-xl border border-gray-300">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Redirecting to Donation Form</h2>
-          <p className="text-gray-700 mb-6">
-            You are being redirected to our secure donation form. If you are not redirected automatically, please click
-            the button below.
-          </p>
-          <a
-            href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient-to-r from-gray-700 to-black text-white rounded-full hover:from-gray-800 hover:to-gray-900 transition-all duration-200"
-          >
-            Go to Donation Form
-          </a>
-        </div>
-      </div>
-    )
-  }
+  const donationFormUrl = "https://forms.gle/Nt4hgGQPDvXwHKYB7"
 
   return (
     <div>
@@ -144,8 +111,8 @@ export default function Donate() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
-                <CreditCard className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
+                <Trophy className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Tournament Fees</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -153,15 +120,15 @@ export default function Donate() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
-                <GraduationCap className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
+                <BookOpen className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Training Programs</h3>
               <p className="text-gray-700 leading-relaxed">Funding expert coaching and skill development programs.</p>
             </div>
             <div className="text-center">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
-                <Plane className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
+                <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Travel Support</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -169,8 +136,8 @@ export default function Donate() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
-                <Package className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
+                <Gift className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Equipment</h3>
               <p className="text-gray-700 leading-relaxed">Providing chess sets, boards, and adaptive equipment.</p>
@@ -179,35 +146,159 @@ export default function Donate() {
         </div>
       </section>
 
-      {/* Donation Form */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Make a Difference?</h2>
+      {/* How You Can Help Us */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">How You Can Help Us</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Your donation will be processed securely through our trusted payment partner.
+              At CADPC Foundation, every move counts – both on the chessboard and in life. Your support can transform
+              the journey of physically challenged chess players, helping them pursue their passion, gain recognition,
+              and build a dignified livelihood through the game they love.
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-xl p-8 border border-gray-300">
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
-                <Crown className="h-8 w-8 text-white" />
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-20">
+            <div className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-300 group hover:scale-105">
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                <HandHeart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Secure Donation Form</h3>
-              <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-                Click the button below to access our secure donation form. You can choose your donation amount and
-                payment method. Every contribution, no matter the size, makes a meaningful impact.
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Donate</h3>
+              <p className="text-gray-700">
+                Your contributions directly go towards training, equipment, travel, and tournament sponsorships for
+                specially-abled players. All donations are eligible for tax exemption under Section 80G.
               </p>
-              <a
-                href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-gray-700 to-black hover:from-gray-800 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                <Crown className="mr-2 h-5 w-5" />
-                Donate Now
-              </a>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-300 group hover:scale-105">
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                <Star className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Sponsor a Player or Event</h3>
+              <p className="text-gray-700">
+                You can choose to support an individual player or sponsor a tournament. This not only gives players
+                financial security but also motivates them to achieve new heights.
+              </p>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-300 group hover:scale-105">
+              <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Partner With Us</h3>
+              <p className="text-gray-700">
+                Are you an organization or corporate house? Partner with us for CSR initiatives. Together, we can create
+                impactful programs that open doors for talent and inclusivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Donation Options */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Choose Your Impact Level</h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Every donation makes a difference in empowering differently-abled chess players.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
+              <div className="p-8">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                  <Crown className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Champion</h3>
+                <p className="text-gray-700 mb-6">₹10,000/month</p>
+                <ul className="space-y-4 mb-8 text-gray-600">
+                  <li className="flex items-center">
+                    <Trophy className="h-5 w-5 mr-2 text-gray-700" />
+                    Sponsor tournament entries
+                  </li>
+                  <li className="flex items-center">
+                    <BookOpen className="h-5 w-5 mr-2 text-gray-700" />
+                    Support coaching programs
+                  </li>
+                  <li className="flex items-center">
+                    <MapPin className="h-5 w-5 mr-2 text-gray-700" />
+                    Enable international participation
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
+              <div className="p-8">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Supporter</h3>
+                <p className="text-gray-700 mb-6">₹5,000/month</p>
+                <ul className="space-y-4 mb-8 text-gray-600">
+                  <li className="flex items-center">
+                    <Gift className="h-5 w-5 mr-2 text-gray-700" />
+                    Provide chess equipment
+                  </li>
+                  <li className="flex items-center">
+                    <BookOpen className="h-5 w-5 mr-2 text-gray-700" />
+                    Fund training sessions
+                  </li>
+                  <li className="flex items-center">
+                    <MapPin className="h-5 w-5 mr-2 text-gray-700" />
+                    Support local travel
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
+              <div className="p-8">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                  <HandHeart className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Friend</h3>
+                <p className="text-gray-700 mb-6">₹2,000/month</p>
+                <ul className="space-y-4 mb-8 text-gray-600">
+                  <li className="flex items-center">
+                    <Trophy className="h-5 w-5 mr-2 text-gray-700" />
+                    Cover tournament fees
+                  </li>
+                  <li className="flex items-center">
+                    <Gift className="h-5 w-5 mr-2 text-gray-700" />
+                    Basic equipment support
+                  </li>
+                  <li className="flex items-center">
+                    <Users className="h-5 w-5 mr-2 text-gray-700" />
+                    Community event access
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Donation Form */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-300">
+              <div className="text-center">
+                <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-4 rounded-full w-fit mx-auto mb-6 shadow-lg">
+                  <HandHeart className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make a Difference?</h3>
+                <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+                  Click the button below to access our secure donation form. You can choose your donation amount and
+                  payment method. Every contribution, no matter the size, makes a meaningful impact.
+                </p>
+                <a
+                  href={donationFormUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                  <HandHeart className="mr-2 h-5 w-5" />
+                  Donate Now
+                </a>
+              </div>
             </div>
           </div>
         </div>

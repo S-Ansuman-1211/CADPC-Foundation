@@ -165,9 +165,7 @@ export default function About() {
               Become a Volunteer
             </a>
             <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-gray-800 bg-white hover:bg-gray-100 transition-all duration-200 shadow-lg"
             >
               <HandHeart className="mr-2 h-5 w-5" />

@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
             <a
-                             href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
+                             href="https://forms.gle/Nt4hgGQPDvXwHKYB7"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center px-10 py-5 border-2 border-gold-400 text-xl font-bold rounded-full text-gold-400 bg-gray-800/50 backdrop-blur-sm hover:bg-gold-400 hover:text-black transition-all duration-300 shadow-2xl hover:shadow-gold-400/25 transform hover:scale-105"
@@ -236,3 +236,13 @@ export default function Home() {
     </div>
   )
 }
+
+<a
+  href="/donate"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group inline-flex items-center px-10 py-5 border-2 border-gold-400 text-xl font-bold rounded-full text-gold-400 bg-gray-800/50 backdrop-blur-sm hover:bg-gold-400 hover:text-black transition-all duration-300 shadow-2xl hover:shadow-gold-400/25 transform hover:scale-105"
+>
+  <HandHeart className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+  Donate Now
+</a>

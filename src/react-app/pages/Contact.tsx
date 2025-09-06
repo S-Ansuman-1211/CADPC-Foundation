@@ -69,7 +69,7 @@ export default function Contact() {
                 24 hours.
               </p>
               <a
-                href="https://forms.gle/YOUR_CONTACT_FORM_ID"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 transition-all duration-200 shadow-lg"
