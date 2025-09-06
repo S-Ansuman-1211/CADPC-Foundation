@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Yamini Arora",
     role: "President",
     bio: "Founder and President of CADPC Foundation, Yamini leads with heart and purpose. As a mother to a young chess enthusiast, she started CADPC to eliminate barriers faced by specially-abled players, creating a space of equal opportunity.",
-    image_url: "/images/main.jpg",
+    image_url: "/main.jpg",
   },
   {
      id: 2,
@@ -38,7 +38,7 @@ const youngLeaders = [
     name: "Ayan",
     role: "Young Leader – Volunteer Wing",
     bio: "A passionate young chess enthusiast who inspires peers with strategic thinking and dedication. As part of our Volunteer Wing, Eya brings his friends and community together to build an inclusive future through chess.",
-    image_url: "images/ayaan.jpg",
+    image_url: "/ayaan.jpg",
   },
 ];
 
