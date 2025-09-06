@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock, Send, Check, Users, Heart, Info } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Send, Check, Users, HandHeart, Info } from "lucide-react"
 
 export default function Contact() {
   const [submitted] = useState(false)
@@ -158,7 +158,7 @@ export default function Contact() {
                   className="flex items-center space-x-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-200 border border-gray-300"
                 >
                   <div className="bg-gradient-to-r from-gray-600 to-gray-800 p-2 rounded-full">
-                    <Heart className="h-5 w-5 text-white" />
+                    <HandHeart className="h-5 w-5 text-white" />
                   </div>
                   <span className="text-gray-700 font-medium">Make a Donation</span>
                 </a>

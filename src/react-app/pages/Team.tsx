@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Users, Star, Award, Lightbulb, HandHeart } from "lucide-react"
+import { Mail, Linkedin, Users, Star, Award, Lightbulb } from "lucide-react"
 
 // Static team data - no database needed
 const teamMembers = [
@@ -48,12 +48,14 @@ export default function Team() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 py-20 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-no-repeat bg-[length:100%_100%]"
           style={{
-            backgroundImage: "url('/IMG-20250810-WA0029.jpg')",
+            backgroundImage: "url('/img1.jpeg')",
           }}
         ></div>
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 30, 30, 0.6)" }}></div>
+        <div className="absolute inset-0"style={{
+    backgroundColor: "rgba(71, 70, 70, 0.4)", // 40% black
+  }}></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Meet Our
@@ -61,7 +63,7 @@ export default function Team() {
               Dedicated Team
             </span>
           </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed" >
             Our committed team brings together lived experiences, professional passion, and a shared mission to empower
             differently-abled individuals through the game of chess. Each member plays a vital role in creating a more
             inclusive, opportunity-driven ecosystem.
@@ -205,26 +207,19 @@ export default function Team() {
             We build strong partnerships—with families, volunteers, schools, and chess bodies—to create collective
             impact.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
               href="/volunteer"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200"
+              className="group inline-flex items-center px-10 py-5 border-2 border-white text-xl font-bold rounded-full text-white bg-gray-800/50 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105"
             >
-              <Users className="mr-2 h-5 w-5" />
+              <Users className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
               Become a Volunteer
             </a>
             <a
-              href="/donate"
-              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-gray-800 bg-white hover:bg-gray-100 transition-all duration-200 shadow-lg"
-            >
-              <HandHeart className="mr-2 h-5 w-5" />
-              Donate Now
-            </a>
-            <a
               href="/contact"
-              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-gray-800 bg-white hover:bg-gray-100 transition-all duration-200 shadow-lg"
+              className="group inline-flex items-center px-10 py-5 border-2 border-white text-xl font-bold rounded-full text-white bg-gray-800/50 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105"
             >
-              <Mail className="mr-2 h-5 w-5" />
+              <Mail className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
               Get in Touch
             </a>
           </div>

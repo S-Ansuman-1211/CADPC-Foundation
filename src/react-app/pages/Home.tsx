@@ -15,7 +15,7 @@ export default function Home() {
      // Chess-themed images for the carousel
    const chessImages = [
      "/IMG-20250810-WA0013.jpg",
-     "/IMG-20250810-WA0014.jpg",
+     "/img7.jpeg",
      "/IMG-20250810-WA0020.jpg",
      "/IMG-20250810-WA0025.jpg",
      "/IMG-20250810-WA0027.jpg",

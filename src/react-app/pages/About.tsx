@@ -4,13 +4,13 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative py-20 bg-cover bg-center bg-no-repeat"
-        style={{
-                      backgroundImage: `url('/IMG-20250810-WA0014.jpg')`,
-        }}
-      >
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 30, 30, 0.6)" }}></div>
+      <section className="relative py-20">
+  <img
+    src="/img1.jpeg"
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-fill"
+  />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(27, 26, 26, 0.6)" }}></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             About
@@ -18,13 +18,10 @@ export default function About() {
               CADPC Foundation
             </span>
           </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            CADPC Foundation (Chess Ability Development for the Physically Challenged) is a not-for-profit NGO based in
-            Delhi-NCR. We are dedicated to making chess accessible to individuals with physical disabilities by
-            providing training, support, and inclusive opportunities. Founded on a simple act of kindness for a young
-            player named Vaibhav, CADPC has grown into a powerful movement—supporting players across India with
-            training, sponsorship, advocacy, and inclusive tournaments.
-          </p>
+          <p className="text-xl text-gray-200 max-w-4x1 mx-auto leading-relaxed">
+            CADPC Foundation(Chess Ability Development for the Physically Challenged)is a not-for-profit NGO based in Delhi-NCR. We are dedicated to making chess accessible to individuals with physical disabilities byproviding training, support, and inclusive opportunities.</p>
+             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"> Founded on a simple act of kindness for a young player named Vaibhav, CADPC has grown into a powerful movement—supporting players across India with training, sponsorship, advocacy, and inclusive tournaments.</p>
+          
         </div>
       </section>
 

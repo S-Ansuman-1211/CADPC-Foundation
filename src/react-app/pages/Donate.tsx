@@ -1,6 +1,6 @@
 "use client"
 
-import { Crown, Users, Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package } from "lucide-react"
+import { Crown, Users, Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package, Gift } from "lucide-react"
 
 export default function Donate() {
   const donationFormUrl = "https://forms.gle/Nt4hgGQPDvXwHKYB7"
@@ -161,7 +161,7 @@ export default function Donate() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-20">
             <div className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-300 group hover:scale-105">
               <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                <CreditCard className="h-8 w-8 text-white" />
+                <HandHeart className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Donate</h3>
               <p className="text-gray-700">
@@ -255,7 +255,7 @@ export default function Donate() {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
               <div className="p-8">
                 <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                  <HandHeart className="h-8 w-8 text-white" />
+                  <Gift className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Friend</h3>
                 <p className="text-gray-700 mb-6">₹2,000/month</p>
@@ -295,7 +295,7 @@ export default function Donate() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-gray-700 to-black hover:from-gray-800 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  <Crown className="mr-2 h-5 w-5" />
+                  <HandHeart className="mr-2 h-5 w-5" />
                   Donate Now
                 </a>
               </div>

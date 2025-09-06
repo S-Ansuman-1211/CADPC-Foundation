@@ -24,7 +24,7 @@ const projects = [
     description:
       "We sponsor tournament fees, travel, and accommodation for players who otherwise can't afford to participate.",
     icon: Globe,
-    image: "/IMG-20250810-WA0024.jpg",
+    image: "/img10.jpeg",
     stats: { beneficiaries: "30K+", locations: "15 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
@@ -33,7 +33,7 @@ const projects = [
     description:
       "By engaging with schools, chess bodies, and media, we're spreading awareness and pushing for systemic inclusion.",
     icon: Megaphone,
-    image: "/IMG-20250810-WA0025.jpg",
+    image: "/img4.jpeg",
     stats: { beneficiaries: "10K+", locations: "6 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
@@ -151,7 +151,7 @@ export default function Work() {
             </div>
             <div className="relative">
               <img
-                src="/IMG-20250810-WA0028.jpg"
+                src="/img6.jpeg"
                 alt="Children in classroom"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
