@@ -50,7 +50,7 @@ export default function Team() {
         <div
           className="absolute inset-0 bg-no-repeat bg-[length:100%_100%]"
           style={{
-            backgroundImage: "url('/img1.jpeg')",
+            backgroundImage: "url('/IMG-20250810-WA0014.jpg')",
           }}
         ></div>
         <div className="absolute inset-0"style={{

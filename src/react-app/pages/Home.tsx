@@ -14,7 +14,7 @@ export default function Home() {
 
      // Chess-themed images for the carousel
    const chessImages = [
-     "/IMG-20250810-WA0013.jpg",
+     "/IMG-20250810-WA0015.jpg",
      "/img7.jpeg",
      "/IMG-20250810-WA0020.jpg",
      "/IMG-20250810-WA0025.jpg",
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                      <div className="mb-16">
              <img
-               src="/team_photo.jpg"
+               src="/img1.jpeg"
                alt="CADPC Foundation Team Achievement"
                className="mx-auto rounded-2xl shadow-2xl border-4 border-gold-400/50 max-w-6xl w-full h-[70vh] object-cover"
              />
