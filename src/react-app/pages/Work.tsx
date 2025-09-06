@@ -1,4 +1,4 @@
-import { HandHeart, Trophy, Globe, Users, Leaf, GraduationCap, Megaphone, Building } from "lucide-react"
+import { HandHeart, Trophy, Globe, Users, Leaf, GraduationCap, Megaphone } from "lucide-react"
 
 const projects = [
   {
