@@ -70,8 +70,10 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                To promote inclusivity and equal opportunity in the world of chess by enabling physically challenged
-                individuals to participate fully—on and off the board. Every move matters.
+                •	To support and encourage physically challenged chess players by providing access to training, resources, and mentorship.
+              	•	To organize inclusive tournaments that celebrate talent and foster participation.
+              	•	To work towards building awareness and advocacy for equal representation in the chess community.
+              	•	To connect players, coaches, sponsors, and well-wishers in a shared movement for empowerment through chess.
               </p>
             </div>
 
@@ -82,9 +84,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                We envision a world where chess becomes a bridge that connects abilities, breaks social barriers, and
-                builds confidence in every individual—regardless of physical limitations. A world where every player can
-                make their move.
+                To create an inclusive chess ecosystem where individuals with physical disabilities are empowered, recognized, and provided equal opportunities to succeed at every level of the game.
               </p>
             </div>
 
