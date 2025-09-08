@@ -1,15 +1,29 @@
 import { HandHeart, Crosshair, Lightbulb, Users, Accessibility, Crown, Zap, UserCheck } from "lucide-react"
 
+
 export default function About() {
+
+  const images = [
+    "/IMG-20250810-WA0021.jpg",
+    "/IMG-20250810-WA0017.jpg",
+    "/IMG-20250810-WA0018.jpg",
+    "/IMG-20250810-WA0019.jpg",
+    "/IMG-20250810-WA0020.jpg",
+    "/img4.jpeg",
+    "/IMG-20250810-WA0023.jpg",
+    "/IMG-20250810-WA0024.jpg",
+    "/IMG-20250810-WA0025.jpg",
+  ];
+
   return (
     <div>
       {/* Hero Section */}
       <section className="relative py-20">
-  <img
-    src="/img1.jpeg"
-    alt="Background"
-    className="absolute inset-0 w-full h-full object-fill"
-  />
+        <img
+          src="/img1.jpeg"
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-fill"
+        />
         <div className="absolute inset-0" style={{ backgroundColor: "rgba(27, 26, 26, 0.6)" }}></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
@@ -18,10 +32,12 @@ export default function About() {
               CADPC Foundation
             </span>
           </h1>
-          <p className="text-xl text-gray-200 max-w-4x1 mx-auto leading-relaxed">
-            CADPC Foundation(Chess Ability Development for the Physically Challenged)is a not-for-profit NGO based in Delhi-NCR. We are dedicated to making chess accessible to individuals with physical disabilities byproviding training, support, and inclusive opportunities.</p>
-             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"> Founded on a simple act of kindness for a young player named Vaibhav, CADPC has grown into a powerful movement—supporting players across India with training, sponsorship, advocacy, and inclusive tournaments.</p>
-          
+          <h3 className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            CADPC Foundation was born out of a simple act of support—helping a young physically challenged chess player named Vaibhav pursue his passion. That small gesture sparked a larger movement.
+          </h3>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            Founded on a simple act of kindness for a young player named Vaibhav, CADPC has grown into a powerful movement—supporting players across India with training, sponsorship, advocacy, and inclusive tournaments.
+          </p>
         </div>
       </section>
 
@@ -81,9 +97,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                We envision a world where chess becomes a bridge that connects abilities, breaks social barriers, and
-                builds confidence in every individual—regardless of physical limitations. A world where every player can
-                make their move.
+                A future where chess is a powerful bridge—connecting abilities, breaking barriers, and building confidence in every player, regardless of their physical limitations.
               </p>
             </div>
 
@@ -141,6 +155,28 @@ export default function About() {
               <h3 className="text-4xl font-bold text-gray-700 mb-2">1000+</h3>
               <p className="text-gray-700 font-medium">Volunteers</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Journey in Frames Gallery */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">Our Journey in Frames</h2>
+            <p className="text-lg text-gray-700 mt-4">Witness the moments that define our mission and the faces we've helped empower.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {images.map((src, i) => (
+              <div key={i} className="relative rounded-xl shadow-lg overflow-hidden group aspect-w-16 aspect-h-9">
+                <img
+                  src={src}
+                  alt={`Gallery ${i}`}
+                  className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
