@@ -32,12 +32,11 @@ export default function About() {
               CADPC Foundation
             </span>
           </h1>
-          <h3 className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            CADPC Foundation was born out of a simple act of support—helping a young physically challenged chess player named Vaibhav pursue his passion. That small gesture sparked a larger movement.
-          </h3>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Founded on a simple act of kindness for a young player named Vaibhav, CADPC has grown into a powerful movement—supporting players across India with training, sponsorship, advocacy, and inclusive tournaments.
-          </p>
+          <p className="text-xl text-gray-200 max-w-4x1 mx-auto leading-relaxed">
+            CADPC Foundation (Chess Ability Development for the Physically Challenged) is a Delhi-NCR based not-for-profit NGO dedicated to making chess accessible for individuals with disabilities. 
+            Our journey began by supporting our first player, Vaibhav, whose passion for the game inspired us to think beyond individual support. CADPC was created with the belief that chess can serve as a powerful tool for empowerment, confidence, and inclusion.</p>
+             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"> Though we are just starting, our vision is to grow into a nationwide movement that nurtures and supports differently-abled players through training, mentorship, sponsorship, advocacy, and inclusive tournaments. Step by step, we aim to build a strong community where every player, regardless of physical challenges, has the opportunity to shine.</p>
+          
         </div>
       </section>
 
