@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Mail, Phone, MapPin, Clock, Send, Check, Users, HandHeart, Info } from "lucide-react"
 

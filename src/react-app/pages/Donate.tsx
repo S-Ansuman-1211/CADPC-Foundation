@@ -1,5 +1,3 @@
-"use client"
-
 import { Crown, Users, Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package, Gift } from "lucide-react"
 
 export default function Donate() {

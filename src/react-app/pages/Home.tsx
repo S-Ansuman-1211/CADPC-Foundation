@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section with Chess Board Pattern Background */}
-      <section
+      {/* <section
         className="py-20 relative"
                  style={{
            backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.85)), url('/chesstheme2.jpg')`,
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission Section with Chess Tournament Background */}
       <section

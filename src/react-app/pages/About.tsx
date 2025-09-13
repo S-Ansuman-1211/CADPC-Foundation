@@ -35,7 +35,7 @@ export default function About() {
           <p className="text-xl text-gray-200 max-w-4x1 mx-auto leading-relaxed">
             CADPC Foundation (Chess Ability Development for the Physically Challenged) is a Delhi-NCR based not-for-profit NGO dedicated to making chess accessible for individuals with disabilities. 
             Our journey began by supporting our first player, Vaibhav, whose passion for the game inspired us to think beyond individual support. CADPC was created with the belief that chess can serve as a powerful tool for empowerment, confidence, and inclusion.</p>
-             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"> Though we are just starting, our vision is to grow into a nationwide movement that nurtures and supports differently-abled players through training, mentorship, sponsorship, advocacy, and inclusive tournaments. Step by step, we aim to build a strong community where every player, regardless of physical challenges, has the opportunity to shine.</p>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"> Though we are just starting, our vision is to grow into a nationwide movement that nurtures and supports differently-abled players through training, mentorship, sponsorship, advocacy, and inclusive tournaments. Step by step, we aim to build a strong community where every player, regardless of physical challenges, has the opportunity to shine.</p>
           
         </div>
       </section>
@@ -84,8 +84,10 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                To promote inclusivity and equal opportunity in the world of chess by enabling physically challenged
-                individuals to participate fully—on and off the board. Every move matters.
+                To support and encourage physically challenged chess players by providing access to training, resources, and mentorship.
+                To organize inclusive tournaments that celebrate talent and foster participation.
+                To work towards building awareness and advocacy for equal representation in the chess community.
+                To connect players, coaches, sponsors, and well-wishers in a shared movement for empowerment through chess.
               </p>
             </div>
 
@@ -96,7 +98,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                A future where chess is a powerful bridge—connecting abilities, breaking barriers, and building confidence in every player, regardless of their physical limitations.
+                To create an inclusive chess ecosystem where individuals with physical disabilities are empowered, recognized, and provided equal opportunities to succeed at every level of the game.
               </p>
             </div>
 
