@@ -1,16 +1,16 @@
-import { useState } from "react"
+// import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Users, ArrowRight, IndianRupee, HandHeart, Lightbulb, Globe } from "lucide-react"
+import { Users, ArrowRight, /*IndianRupee8*/ HandHeart, Lightbulb, Globe } from "lucide-react"
 import ImageCarousel from "../components/ImageCarousel"
 
-interface Stats {
-  totalDonations: number
-  donorCount: number
-  volunteerCount: number
-}
+// interface Stats {
+//   totalDonations: number
+//   donorCount: number
+//   volunteerCount: number
+// }
 
 export default function Home() {
-  const [stats] = useState<Stats>({ totalDonations: 125000, donorCount: 1250, volunteerCount: 850 })
+  // const [stats] = useState<Stats>({ totalDonations: 125000, donorCount: 1250, volunteerCount: 850 })
 
      // Chess-themed images for the carousel
    const chessImages = [
