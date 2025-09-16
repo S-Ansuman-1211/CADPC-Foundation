@@ -1,4 +1,4 @@
-import { HandHeart, Trophy, Globe, Users, Leaf, GraduationCap, Megaphone } from "lucide-react"
+import { HandHeart, Trophy, Globe, Users, Leaf, GraduationCap, Megaphone, Quote } from "lucide-react"
 
 const projects = [
   {
@@ -205,7 +205,80 @@ export default function Work() {
         </div>
       </section>
 
-      
+      {/* User Stories */}
+      <section
+        className="py-20 relative text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.85)), url('/chesstheme2.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Voices from the Board</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Hear directly from the players whose lives have been transformed through our programs and support.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Vaibhav Gautam */}
+            <div className="bg-black/40 rounded-2xl shadow-lg p-8 border border-white/20 backdrop-blur-sm">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl font-bold mr-4 border-2 border-white">
+                  V
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Vaibhav Gautam</h4>
+                  <p className="text-sm text-gray-400">Beneficiary, Chess Player</p>
+                </div>
+              </div>
+              <Quote className="h-8 w-8 text-gray-400 mb-4" />
+              <blockquote className="text-lg leading-relaxed mb-4 italic">
+                “Living with cerebral palsy—and being about 90% disabled while unable to walk or speak—Vaibhav communicates
+                through his chess moves. His competitive spirit shone when he won the state-level tournament in Delhi.”
+              </blockquote>
+            </div>
+
+            {/* Sonu Bisht */}
+            <div className="bg-black/40 rounded-2xl shadow-lg p-8 border border-white/20 backdrop-blur-sm">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl font-bold mr-4 border-2 border-white">
+                  S
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Sonu Bisht</h4>
+                  <p className="text-sm text-gray-400">Beneficiary, Chess Player</p>
+                </div>
+              </div>
+              <Quote className="h-8 w-8 text-gray-400 mb-4" />
+              <blockquote className="text-lg leading-relaxed mb-4 italic">
+                “Sonu also has cerebral palsy and a speech disability. Despite these challenges, he has been playing chess
+                for three years and came in second in the Delhi tournament.”
+              </blockquote>
+            </div>
+
+            {/* Neha */}
+            <div className="bg-black/40 rounded-2xl shadow-lg p-8 border border-white/20 backdrop-blur-sm">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl font-bold mr-4 border-2 border-white">
+                  N
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Neha</h4>
+                  <p className="text-sm text-gray-400">Beneficiary, Chess Player</p>
+                </div>
+              </div>
+              <Quote className="h-8 w-8 text-gray-400 mb-4" />
+              <blockquote className="text-lg leading-relaxed mb-4 italic">
+                “Neha has an orthopedic disability. She has been playing chess since 2012, teaches beginners (mostly
+                non-disabled), and stood third in the tournament.”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="py-20" style={{ background: "linear-gradient(135deg, #4b5563 0%, #6b7280 100%)" }}>

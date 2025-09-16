@@ -1,6 +1,6 @@
 // import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Users, ArrowRight, /*IndianRupee8*/ HandHeart, Lightbulb, Globe } from "lucide-react"
+import { Users, ArrowRight, /*IndianRupee*/ HandHeart, Lightbulb, Globe } from "lucide-react"
 import ImageCarousel from "../components/ImageCarousel"
 
 // interface Stats {
@@ -10,37 +10,37 @@ import ImageCarousel from "../components/ImageCarousel"
 // }
 
 export default function Home() {
-  // const [stats] = useState<Stats>({ totalDonations: 125000, donorCount: 1250, volunteerCount: 850 })
+  //  const [stats] = useState<Stats>({ totalDonations: 125000, donorCount: 1250, volunteerCount: 850 })
 
-     // Chess-themed images for the carousel
-   const chessImages = [
-     "/IMG-20250810-WA0015.jpg",
-     "/img7.jpeg",
-     "/IMG-20250810-WA0020.jpg",
-     "/IMG-20250810-WA0025.jpg",
-     "/IMG-20250810-WA0027.jpg",
-   ]
+  // Chess-themed images for the carousel
+  const chessImages = [
+    "/IMG-20250810-WA0015.jpg",
+    "/img7.jpeg",
+    "/IMG-20250810-WA0020.jpg",
+    "/IMG-20250810-WA0025.jpg",
+    "/IMG-20250810-WA0027.jpg",
+  ]
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Hero Section with Chess Background */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-                 style={{
-           backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.7)), url('/chess theme.jpg')`,
-           backgroundSize: "cover",
-           backgroundPosition: "center",
-           backgroundAttachment: "fixed",
-         }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.7)), url('/chess theme.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                     <div className="mb-16">
-             <img
-               src="/img1.jpeg"
-               alt="CADPC Foundation Team Achievement"
-               className="mx-auto rounded-2xl shadow-2xl border-4 border-gold-400/50 max-w-6xl w-full h-[70vh] object-cover"
-             />
-           </div>
+          <div className="mb-16">
+            <img
+              src="/img1.jpeg"
+              alt="CADPC Foundation Team Achievement"
+              className="mx-auto rounded-2xl shadow-2xl border-4 border-gold-400/50 max-w-6xl w-full h-[70vh] object-cover"
+            />
+          </div>
 
           {/* Chess Piece Icons Row */}
           <div className="flex justify-center space-x-8 mb-12 opacity-80">
@@ -77,9 +77,9 @@ export default function Home() {
             <span className="text-white">Where every player finds a place.</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
             <a
-                             href="https://forms.gle/Nt4hgGQPDvXwHKYB7"
+              href="https://forms.gle/Nt4hgGQPDvXwHKYB7"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center px-10 py-5 border-2 border-gold-400 text-xl font-bold rounded-full text-gold-400 bg-gray-800/50 backdrop-blur-sm hover:bg-gold-400 hover:text-black transition-all duration-300 shadow-2xl hover:shadow-gold-400/25 transform hover:scale-105"
@@ -96,13 +96,23 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* Certification Note */}
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-16 italic">
+            CADPC Foundation is a registered NGO with 12A & 80G certifications. All donations are tax-exempt under
+            Section 80G of the Income Tax Act.
+          </p>
+
           <div className="mt-16">
-            <ImageCarousel images={chessImages} autoSlideInterval={4000} showIndicators={true} showTextOverlay={true} />
+            <ImageCarousel
+              images={chessImages}
+              autoSlideInterval={4000}
+              showIndicators={true}
+              showTextOverlay={true}
+            />
           </div>
         </div>
       </section>
-
-      {/* Stats Section with Chess Board Pattern Background */}
+        {/* Stats Section with Chess Board Pattern Background */}
       {/* <section
         className="py-20 relative"
                  style={{
@@ -146,15 +156,14 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-
       {/* Mission Section with Chess Tournament Background */}
       <section
         className="py-20 relative"
-                 style={{
-           backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.75), rgba(30, 30, 30, 0.8)), url('/IMG-20250810-WA0021.jpg')`,
-           backgroundSize: "cover",
-           backgroundPosition: "center",
-         }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.75), rgba(30, 30, 30, 0.8)), url('/IMG-20250810-WA0021.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
