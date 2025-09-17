@@ -1,4 +1,4 @@
-import { Crown, Users, Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package, Gift } from "lucide-react"
+import { Crown,/* Users*/ Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package /*Gift*/ } from "lucide-react"
 
 export default function Donate() {
   const donationFormUrl = "https://forms.gle/Nt4hgGQPDvXwHKYB7"
