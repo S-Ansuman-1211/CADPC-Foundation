@@ -52,8 +52,8 @@ export default function Donate() {
                   Your donations help players compete in inclusive tournaments with dignity and confidence.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  <Trophy className="h-5 w-5 mr-2" />
-                  <span className="font-semibold">150+ Players Supported</span>
+                  {/* <Trophy className="h-5 w-5 mr-2" /> */}
+                  {/* <span className="font-semibold">150+ Players Supported</span> */}
                 </div>
               </div>
             </div>
@@ -70,8 +70,8 @@ export default function Donate() {
                   Expert coaching and guidance for aspiring chess players of all abilities.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  <Users className="h-5 w-5 mr-2" />
-                  <span className="font-semibold">25+ Coaches Funded</span>
+                  {/* <Users className="h-5 w-5 mr-2" /> */}
+                  {/* <span className="font-semibold">25+ Coaches Funded</span> */}
                 </div>
               </div>
             </div>
@@ -88,8 +88,8 @@ export default function Donate() {
                   Creating inclusive spaces where everyone can learn, grow, and connect through chess.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  <Globe className="h-5 w-5 mr-2" />
-                  <span className="font-semibold">10+ Communities</span>
+                  {/* <Globe className="h-5 w-5 mr-2" /> */}
+                  {/* <span className="font-semibold">10+ Communities</span> */}
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function Donate() {
       {/* Donation Options */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          {/* <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Choose Your Impact Level</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Every donation makes a difference in empowering differently-abled chess players.
@@ -273,7 +273,7 @@ export default function Donate() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Donation Form */}
           <div className="max-w-4xl mx-auto">

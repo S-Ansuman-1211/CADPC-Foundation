@@ -7,7 +7,6 @@ const projects = [
       "We organize accessible, inclusive chess tournaments where physically challenged players can compete with dignity and confidence.",
     icon: Trophy,
     image: "/IMG-20250810-WA0022.jpg",
-    stats: { beneficiaries: "15K+", locations: "12 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
   {
@@ -16,7 +15,6 @@ const projects = [
       "From one-on-one coaching to group mentorship by volunteers, we ensure every aspiring player gets the guidance they need.",
     icon: GraduationCap,
     image: "/IMG-20250810-WA0023.jpg",
-    stats: { beneficiaries: "25K+", locations: "8 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
   {
@@ -25,7 +23,6 @@ const projects = [
       "We sponsor tournament fees, travel, and accommodation for players who otherwise can't afford to participate.",
     icon: Globe,
     image: "/img10.jpeg",
-    stats: { beneficiaries: "30K+", locations: "15 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
   {
@@ -34,7 +31,6 @@ const projects = [
       "By engaging with schools, chess bodies, and media, we're spreading awareness and pushing for systemic inclusion.",
     icon: Megaphone,
     image: "/img4.jpeg",
-    stats: { beneficiaries: "10K+", locations: "6 Countries" },
     color: "from-gray-600/50 to-gray-800/50",
   },
 ]
@@ -102,7 +98,7 @@ export default function Work() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
                     <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
-                    <div className="flex justify-between text-sm">
+                    {/* <div className="flex justify-between text-sm">
                       <div>
                         <span className="font-semibold text-gray-600">{project.stats.beneficiaries}</span>
                         <span className="text-gray-600 ml-1">Beneficiaries</span>
@@ -111,7 +107,7 @@ export default function Work() {
                         <span className="font-semibold text-gray-600">{project.stats.locations}</span>
                         <span className="text-gray-600 ml-1">Locations</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               )
@@ -134,7 +130,7 @@ export default function Work() {
                   recognition and set a benchmark for accessible tournament design.
                 </p>
               </div>
-              <div className="mt-8 grid grid-cols-3 gap-4 text-center">
+              {/* <div className="mt-8 grid grid-cols-3 gap-4 text-center">
                 <div className="bg-white p-4 rounded-lg shadow border border-gray-300">
                   <div className="text-2xl font-bold text-gray-600">150+</div>
                   <div className="text-sm text-gray-700">Participants</div>
@@ -147,7 +143,7 @@ export default function Work() {
                   <div className="text-2xl font-bold text-gray-600">12</div>
                   <div className="text-sm text-gray-700">NGOs & Chess Bodies Collaborated</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="relative">
               <img
