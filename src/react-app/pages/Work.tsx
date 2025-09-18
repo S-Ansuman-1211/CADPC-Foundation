@@ -213,7 +213,7 @@ export default function Work() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Voices from the Board</h2>
+            <h2 className="text-4xl font-bold mb-4">Players profile</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Hear directly from the players whose lives have been transformed through our programs and support.
             </p>
