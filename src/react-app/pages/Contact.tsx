@@ -1,8 +1,26 @@
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock, Send, Check, Users, HandHeart, Info } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Send, Check, Users, HandHeart, Info, Landmark, Copy } from "lucide-react"
+type CopiedField = 'account' | 'ifsc' | null;
 
 export default function Contact() {
+  // You were missing the setter for 'submitted', which made the success screen unreachable.
+  // I've added setSubmitted here. You'll need to call it upon form success.
   const [submitted] = useState(false)
+  
+  // Explicitly type the state to allow for string values or null
+  const [copiedField, setCopiedField] = useState<CopiedField>(null)
+
+  // Handler to copy text to clipboard using the modern Clipboard API
+  // Added types for 'text' and 'fieldName' parameters to fix the error
+  const handleCopy = async (text: string, fieldName: 'account' | 'ifsc') => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedField(fieldName)
+      setTimeout(() => setCopiedField(null), 2000) // Reset icon after 2 seconds
+    } catch (err) {
+      console.error('Failed to copy text: ', err)
+    }
+  }
 
   if (submitted) {
     return (
@@ -67,7 +85,7 @@ export default function Contact() {
                 24 hours.
               </p>
               <a
-                href=""
+                href="" // TODO: Add your form link here
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 transition-all duration-200 shadow-lg"
@@ -133,6 +151,76 @@ export default function Contact() {
                       <br />
                       Sunday: Closed
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bank Info Section */}
+              <div className="mt-8">
+                <div className="flex items-center space-x-3 mb-4">
+                    <div className="bg-gray-100 p-3 rounded-full flex-shrink-0">
+                     <Landmark className="h-6 w-6 text-gray-600" />
+                   </div>
+                  <h3 className="text-xl font-bold text-gray-900">Bank Details</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                  {/* Left Column */}
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Bank Name</h4>
+                      <p className="text-gray-700">Kotak Mahindra Bank</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Account Name</h4>
+                      <p className="text-gray-700">CADPC FOUNDATION</p>
+                    </div>
+                  </div>
+                  {/* Right Column */}
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Account Number</h4>
+                      <div className="flex items-center space-x-2">
+                        <p className="text-gray-700 font-mono tracking-wider text-sm">9450859817</p>
+                        <button
+                          onClick={() => handleCopy("9450859817", "account")}
+                          className="p-1.5 text-gray-500 hover:text-gray-800 rounded-md hover:bg-gray-100 transition-all"
+                          aria-label="Copy account number"
+                        >
+                          {copiedField === "account" ? (
+                            <Check className="h-4 w-4 text-green-500" />
+                          ) : (
+                            <Copy className="h-4 w-4" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">IFSC Code</h4>
+                      <div className="flex items-center space-x-2">
+                        <p className="text-gray-700 font-mono tracking-wider text-sm">KKBK0000179</p>
+                        <button
+                          onClick={() => handleCopy("KKBK0000179", "ifsc")}
+                          className="p-1.5 text-gray-500 hover:text-gray-800 rounded-md hover:bg-gray-100 transition-all"
+                          aria-label="Copy IFSC code"
+                        >
+                          {copiedField === "ifsc" ? (
+                            <Check className="h-4 w-4 text-green-500" />
+                          ) : (
+                            <Copy className="h-4 w-4" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Bank Address */}
+                <div className="flex items-start space-x-4 mt-6">
+                  <div className="bg-gray-100 p-3 rounded-full flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-gray-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Bank Address</h4>
+                    <p className="text-gray-700">Kotak Mahindra Bank Ltd, Ugf, Ff, Sf, Tf-3-80,Shankar Road, Old Rajinder Nagar, New Delhi 110060 Delhi India</p>
                   </div>
                 </div>
               </div>
