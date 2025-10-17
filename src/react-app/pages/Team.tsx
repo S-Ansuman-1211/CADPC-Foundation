@@ -35,7 +35,7 @@ const teamMembers = [
 const youngLeaders = [
   {
     id: 1,
-    name: "Ayan",
+    name: "Ayaan Arora",
     role: "Young Leader - Volunteer Wing",
     bio: "A passionate young chess enthusiast, Ayaan inspires peers with strategic thinking and dedication. As part of our Volunteer Wing, he brings his friends and community together to build an inclusive future through chess.",
     image_url: "/ayaan.jpg",
