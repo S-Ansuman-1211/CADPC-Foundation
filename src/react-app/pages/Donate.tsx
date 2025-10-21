@@ -1,7 +1,7 @@
 import { Crown,/* Users*/ Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package /*Gift*/ } from "lucide-react"
 
 export default function Donate() {
-  const donationFormUrl = "https://forms.gle/Nt4hgGQPDvXwHKYB7"
+  const donationFormUrl = "https://docs.google.com/forms/d/1uR1E4VZ8RVTEoueEn4N7Q-saX3Jf2T6-ai7mwjK7pbk/edit"
 
   return (
     <div>
