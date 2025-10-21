@@ -95,7 +95,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href=""
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdDddr3VrTkLJEn1sEZLLrwf_ueRiChVpE8rP4O8TMB3s8leg/viewform?usp=header"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-gray-100 transition-colors hover:translate-x-1 transform duration-300 block"
@@ -105,7 +105,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/volunteer"
+                  to="https://docs.google.com/forms/d/e/1FAIpQLSd0XKlydvE5uxCj4yQBRKttv2pmM4PYhd1xre242dPPoS6Qgw/viewform?usp=header"
                   className="text-gray-300 hover:text-gray-100 transition-colors hover:translate-x-1 transform duration-300 block"
                 >
                   Become a Volunteer
