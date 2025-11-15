@@ -3,20 +3,16 @@ import { Mail, Phone, MapPin, Clock, Send, Check, Users, HandHeart, Info, Landma
 type CopiedField = 'account' | 'ifsc' | null;
 
 export default function Contact() {
-  // You were missing the setter for 'submitted', which made the success screen unreachable.
-  // I've added setSubmitted here. You'll need to call it upon form success.
+  
   const [submitted] = useState(false)
   
-  // Explicitly type the state to allow for string values or null
   const [copiedField, setCopiedField] = useState<CopiedField>(null)
 
-  // Handler to copy text to clipboard using the modern Clipboard API
-  // Added types for 'text' and 'fieldName' parameters to fix the error
   const handleCopy = async (text: string, fieldName: 'account' | 'ifsc') => {
     try {
       await navigator.clipboard.writeText(text)
       setCopiedField(fieldName)
-      setTimeout(() => setCopiedField(null), 2000) // Reset icon after 2 seconds
+      setTimeout(() => setCopiedField(null), 2000) 
     } catch (err) {
       console.error('Failed to copy text: ', err)
     }
@@ -124,7 +120,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-700">+1 (555) 123-4567</p>
+                    <p className="text-gray-700">+91 78359 76555</p>
                   </div>
                 </div>
 
@@ -134,7 +130,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-700">cadpcfoundation@gmail.com</p>
+                    <p className="text-gray-700">Delhichessforpc@gmail.com</p>
                   </div>
                 </div>
 

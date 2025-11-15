@@ -1,4 +1,4 @@
-import { Crown,/* Users*/ Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package /*Gift*/ } from "lucide-react"
+import { Crown, Trophy, Globe, HandHeart, CreditCard, GraduationCap, Plane, Package } from "lucide-react"
 
 export default function Donate() {
   const donationFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdDddr3VrTkLJEn1sEZLLrwf_ueRiChVpE8rP4O8TMB3s8leg/viewform?usp=header"
@@ -9,7 +9,7 @@ export default function Donate() {
       <section
         className="relative py-20"
         style={{
-                      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/chess theme.jpg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/chess theme.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -52,8 +52,6 @@ export default function Donate() {
                   Your donations help players compete in inclusive tournaments with dignity and confidence.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  {/* <Trophy className="h-5 w-5 mr-2" /> */}
-                  {/* <span className="font-semibold">150+ Players Supported</span> */}
                 </div>
               </div>
             </div>
@@ -70,8 +68,6 @@ export default function Donate() {
                   Expert coaching and guidance for aspiring chess players of all abilities.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  {/* <Users className="h-5 w-5 mr-2" /> */}
-                  {/* <span className="font-semibold">25+ Coaches Funded</span> */}
                 </div>
               </div>
             </div>
@@ -88,8 +84,6 @@ export default function Donate() {
                   Creating inclusive spaces where everyone can learn, grow, and connect through chess.
                 </p>
                 <div className="flex items-center text-gray-600">
-                  {/* <Globe className="h-5 w-5 mr-2" /> */}
-                  {/* <span className="font-semibold">10+ Communities</span> */}
                 </div>
               </div>
             </div>
@@ -194,87 +188,6 @@ export default function Donate() {
       {/* Donation Options */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Choose Your Impact Level</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Every donation makes a difference in empowering differently-abled chess players.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
-              <div className="p-8">
-                <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                  <Crown className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Champion</h3>
-                <p className="text-gray-700 mb-6">₹10,000/month</p>
-                <ul className="space-y-4 mb-8 text-gray-600">
-                  <li className="flex items-center">
-                    <Trophy className="h-5 w-5 mr-2 text-gray-700" />
-                    Sponsor tournament entries
-                  </li>
-                  <li className="flex items-center">
-                    <Users className="h-5 w-5 mr-2 text-gray-700" />
-                    Support coaching programs
-                  </li>
-                  <li className="flex items-center">
-                    <Globe className="h-5 w-5 mr-2 text-gray-700" />
-                    Enable international participation
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
-              <div className="p-8">
-                <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                  <Users className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Supporter</h3>
-                <p className="text-gray-700 mb-6">₹5,000/month</p>
-                <ul className="space-y-4 mb-8 text-gray-600">
-                  <li className="flex items-center">
-                    <Package className="h-5 w-5 mr-2 text-gray-700" />
-                    Provide chess equipment
-                  </li>
-                  <li className="flex items-center">
-                    <GraduationCap className="h-5 w-5 mr-2 text-gray-700" />
-                    Fund training sessions
-                  </li>
-                  <li className="flex items-center">
-                    <Plane className="h-5 w-5 mr-2 text-gray-700" />
-                    Support local travel
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-300 group hover:scale-105">
-              <div className="p-8">
-                <div className="bg-gradient-to-r from-gray-700 to-black p-4 rounded-full w-fit mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                  <Gift className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Friend</h3>
-                <p className="text-gray-700 mb-6">₹2,000/month</p>
-                <ul className="space-y-4 mb-8 text-gray-600">
-                  <li className="flex items-center">
-                    <CreditCard className="h-5 w-5 mr-2 text-gray-700" />
-                    Cover tournament fees
-                  </li>
-                  <li className="flex items-center">
-                    <Package className="h-5 w-5 mr-2 text-gray-700" />
-                    Basic equipment support
-                  </li>
-                  <li className="flex items-center">
-                    <Users className="h-5 w-5 mr-2 text-gray-700" />
-                    Community event access
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
-
           {/* Donation Form */}
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-300">
@@ -296,6 +209,25 @@ export default function Donate() {
                   <HandHeart className="mr-2 h-5 w-5" />
                   Donate Now
                 </a>
+              </div>
+            </div>
+
+            {/* UPI Payment Option */}
+            <div className="mt-8 bg-white rounded-2xl shadow-xl p-8 border border-gray-300">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Quick UPI Payment</h3>
+                <p className="text-gray-700 mb-6">
+                  Scan the QR code below to donate directly via any UPI app
+                </p>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/QRCODE.jpg" 
+                    alt="UPI QR Code for CADPC Foundation" 
+                    className="w-64 h-64 object-contain border-2 border-gray-200 rounded-lg shadow-md"
+                  />
+                </div>
+                <p className="text-lg font-semibold text-gray-900 mb-2">UPI ID: cadpc718@kotak</p>
+                <p className="text-sm text-gray-600">Pay using Google Pay, PhonePe, Paytm, or any UPI app</p>
               </div>
             </div>
           </div>
