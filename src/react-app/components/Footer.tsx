@@ -142,12 +142,12 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 {/* Added Phone icon */}
                 <Phone className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-300 text-sm">+91 78359 76555</span>
               </div>
               <div className="flex items-center space-x-3">
                 {/* Added Mail icon */}
                 <Mail className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">cadpcfoundation@gmail.com</span>
+                <span className="text-gray-300 text-sm">Delhichessforpc@gmail.com</span>
               </div>
             </div>
           </div>
